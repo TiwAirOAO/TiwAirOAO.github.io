@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="个人介绍：不可食用。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Tiw&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2022/index.html">
+  <meta name="description" content="我不应该花很多时间思考取什么标题。 话说 Diary 为什么都要写昨天发生的事情呢？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Untitled - 2023.07.01">
+<meta property="og:url" content="http://example.com/2023/06/30/2023-07-01/index.html">
 <meta property="og:site_name" content="Tiw&#39;s Blog">
-<meta property="og:description" content="个人介绍：不可食用。">
+<meta property="og:description" content="我不应该花很多时间思考取什么标题。 话说 Diary 为什么都要写昨天发生的事情呢？">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-30T21:38:59.000Z">
+<meta property="article:modified_time" content="2023-07-01T06:23:11.225Z">
 <meta property="article:author" content="TiwAirOAO">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/archives/2022/">
+<link rel="canonical" href="http://example.com/2023/06/30/2023-07-01/">
 
 
 <script id="page-configurations">
@@ -38,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Tiw's Blog</title>
+  <title>Untitled - 2023.07.01 | Tiw's Blog</title>
   
 
 
@@ -157,50 +159,102 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/06/30/2023-07-01/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://avatars.githubusercontent.com/u/55590999">
+      <meta itemprop="name" content="TiwAirOAO">
+      <meta itemprop="description" content="个人介绍：不可食用。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tiw's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Untitled - 2023.07.01
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-07-01 05:38:59 / 修改时间：14:23:11" itemprop="dateCreated datePublished" datetime="2023-07-01T05:38:59+08:00">2023-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Diary/" itemprop="url" rel="index"><span itemprop="name">Diary</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>我不应该花很多时间思考取什么标题。</p>
+<p>话说 Diary 为什么都要写昨天发生的事情呢？</p>
+<span id="more"></span>
+<p>昨天尝试算了覆叠空间的一些技术细节。话说其实我很想吐槽这个翻译“覆叠空间”，把 cover 这个常用词汇被翻译成了“覆叠”这个生造的词。</p>
+<p>大致有如下几项引理：</p>
+<p><strong><u>Lemma (Uniqueness of Lifting)</u></strong>. 若 $Z$ 连通，$p\colon Y\to X$ 是覆叠映射，$q\colon Z\to X$ 连续。$f,g\colon Z\to Y$ 是两个 $q$ 沿着 $p$ 的提升，且在一点处相同，则它们是同一个映射。</p>
+<p>事实上，只需要 $p$ 是局部同胚就足够了。不过 $X$ 需要局部连通性质，以下总假设 $X$ 局部连通。</p>
+<p>思路：证明等值子既开又闭，然后用 $Z$ 的连通性。闭部分只需要拉回 $Y\times Y$ 对角线。开部分则需要利用覆叠（局部同胚）性质。</p>
+<p>如果取 $Z = Y$，也即考察连通覆叠到自己的保纤维映射，就会得到看似不可思议的事情：这种映射仅由一点的像完全决定！</p>
+<p><strong><u>Lemma (Path Lifting Property)</u></strong>. 设 $\gamma\colon [0, 1]\to X$ 是道路，$p\colon Y\to X$ 是覆叠映射，$p(y) = \gamma(0)$，则存在提升 $\tilde\gamma\colon [0, 1]\to Y$，使得 $\tilde\gamma(0) = y$。进一步地，如果 $\gamma_1$ 与 $\gamma_2$ 是两个定端同伦的道路，则提升 $\tilde\gamma_1(1) = \tilde\gamma_2(1)$。</p>
+<p>其实第二段陈述蕴含了覆叠的另一个性质，也即同伦提升性质（Homotopy Lifting Property）。提升的唯一性由前面的那个引理保证。</p>
+<p>道路提升性质也可以用于探讨一般提升的存在性，大概需要基本群满足一些性质云云。</p>
+<p><strong><u>Lemma</u></strong>. 覆叠空间之间的保纤维映射也是覆叠。</p>
+<p>这个是 by definition 的，但是它确实很有用。</p>
+<hr>
+<p>其实想每天背一点日语，但是一直在咕咕咕。。。</p>
+<p>人之所以为人，就是因为人不是鸽子！从今天开始，改过自新，重新做人！</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-11-02T23:27:13+08:00"
-              content="2022-11-02">
-          11-02
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/11/02/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/06/29/2023-06-30/" rel="prev" title="Restart - 2023.06.30">
+      <i class="fa fa-chevron-left"></i> Restart - 2023.06.30
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
@@ -361,6 +415,59 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
